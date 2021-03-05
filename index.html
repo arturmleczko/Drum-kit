@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Drum Kit</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <section class="drum-kit-wrapper">
+            <img src="images/crash.png" alt="Crash" class="crash">
+            <img src="images/hihat-top.png" alt="Hihat-top" class="hihat">
+            <img src="images/drum-kit.png" alt="Drum kit" class="drum-kit">
+            <div class="key clap" data-key="65">
+                <span>A</span>
+            </div>
+            <div class="key hihat" data-key="83">
+                <span>S</span>
+            </div>
+            <div class="key kick" data-key="68">
+                <span>D</span>
+            </div>
+            <div class="key openhat" data-key="70">
+                <span>F</span>
+            </div>
+            <div class="key boom" data-key="71">
+                <span>G</span>
+            </div>
+            <div class="key ride" data-key="72">
+                <span>H</span>
+            </div>
+            <div class="key snare" data-key="74">
+                <span>J</span>
+            </div>
+            <div class="key tom" data-key="75">
+                <span>K</span>
+            </div>
+            <div class="key tink" data-key="76">
+                <span>L</span>
+            </div>
+        </section>
+        <section class="audio-wrapper">
+            <audio src="sounds/clap.wav" data-key="65"></audio>
+            <audio src="sounds/hihat.wav" data-key="83"></audio>
+            <audio src="sounds/kick.wav" data-key="68"></audio>
+            <audio src="sounds/openhat.wav" data-key="70"></audio>
+            <audio src="sounds/boom.wav" data-key="71"></audio>
+            <audio src="sounds/ride.wav" data-key="72"></audio>
+            <audio src="sounds/snare.wav" data-key="74"></audio>
+            <audio src="sounds/tom.wav" data-key="75"></audio>
+            <audio src="sounds/tink.wav" data-key="76"></audio>
+        </section>
+        <button class = "red" id="recordBtn">Record</button>
+        <button class = "green" id="playBtn">Play</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

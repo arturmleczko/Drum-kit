@@ -1,0 +1,155 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+/* MAIN WRAPPER */
+
+.main-wrapper {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 1080px;
+    text-align: center;
+}
+
+.drum-kit-wrapper {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.drum-kit {
+    position: relative;
+    width: 100%;
+}
+
+img.crash {
+    position: absolute;
+    top: 22px;
+    left: 31px;
+    width: 350px;
+    transform: rotate(-7deg);
+    transition: all ease-in-out .042s;
+}
+
+img.hihat {
+    position: absolute;
+    top: 95px;
+    right: -30px;
+    width: 350px;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+    position: absolute;
+    display: inline-block;
+    background: #eaeaea;
+    height: 40px;
+    width: 40px;
+    border: 4px solid #aaa;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #444;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    transition: all ease-in-out .042s;
+    z-index: 2;
+}
+
+.clap {
+    top: 284px;
+    right: 451px;
+}
+
+.hihat {
+    right: 61px;
+    top: 145px;
+}
+
+.kick {
+    top: 515px;
+    right: 318px;
+}
+
+.openhat {
+    left: 570px;
+    top: 145px;
+}
+
+.boom {
+    right: 433px;
+    top: 515px;
+}
+
+.ride {
+    left: 184px;
+    top: 45px;
+}
+
+.snare {
+    right: 187px;
+    top: 313px;
+}
+
+.tom {
+    right: 606px;
+    top: 392px;
+}
+
+.tink {
+    top: 284px;
+    left: 469px;
+}
+
+.playing {
+    transform: scale(1.12);
+}
+
+/* BUTTONS */
+
+button {
+
+    outline: none;
+    display: inline-block;
+    color: white;
+    min-width: 150px;
+    padding: 25px 35px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+        0 2px 0 -1px rgba(0, 0, 0, 0.13),
+        0 3px 0 -1px rgba(0, 0, 0, 0.08),
+        0 3px 13px -1px rgba(0, 0, 0, 0.21);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.green {
+    background-color: #9abf7f;
+}
+
+.red {
+    background-color: #fa5a5a;
+}
